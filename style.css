@@ -1,0 +1,36 @@
+body{
+  background-color: black;
+  margin: 0px;
+}
+
+.demo{
+  color: white;
+  font-size:36px;
+  font-weight: bold;
+}
+
+@keyframes move{
+  
+  from{
+    transform: translateX(-1000px);
+  }
+  to{
+    transform: translateX(0px);
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.text {
+  color: white;
+  font-size: 36px;
+  font-white: bold;
+  animation-name:move;
+  animation-duration: 2s;
+  animation-fill-mode:backwards;
+}
