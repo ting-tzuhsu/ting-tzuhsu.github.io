@@ -1,36 +1,36 @@
-body{
-  background-color: black;
-  margin: 0px;
+.jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  background-color: #FFF;
 }
-
-.demo{
-  color: white;
-  font-size:36px;
-  font-weight: bold;
-}
-
-@keyframes move{
-  
-  from{
-    transform: translateX(-1000px);
-  }
-  to{
-    transform: translateX(0px);
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+.jumbotron p:last-child {
+  margin-bottom: 0;
 }
 
-.text {
-  color: white;
-  font-size: 36px;
-  font-white: bold;
-  animation-name:move;
-  animation-duration: 2s;
-  animation-fill-mode:backwards;
+.jumbotron h1 {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+body .bg-dark {
+    background-color: #000000!important;
 }
